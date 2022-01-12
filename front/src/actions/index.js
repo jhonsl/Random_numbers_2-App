@@ -2,7 +2,7 @@ export const fetchRandom = (state) => (dispatch) => {
 
     dispatch({ type: "view-loading" });
 
-    return fetch(`http://localhost:8080/r`, {
+    return fetch(`https://app-random-back.herokuapp.com/r`, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         headers: {
             'Content-Type': 'application/json'
@@ -19,7 +19,7 @@ export const fetchRandomRange = (state) => (dispatch) => {
 
     dispatch({ type: "view-loading" });
 
-    return fetch(`http://localhost:8080/r/range`, {
+    return fetch(`https://app-random-back.herokuapp.com/r/range`, {
         method: 'POST', // *GET, POST, PUT, DELETE, etc.
         headers: {
             'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ export const GetAll = () => (dispatch) => {
 
     dispatch({ type: "view-loading" });
 
-    return fetch(`http://localhost:8080/r`, {
+    return fetch(`https://app-random-back.herokuapp.com/r`, {
         method: 'GET', // *GET, POST, PUT, DELETE, etc.
         headers: {
             'Content-Type': 'application/json'
